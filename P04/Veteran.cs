@@ -12,6 +12,7 @@ namespace P04
         public Veteran(string jmeno) : base(jmeno)
         {
             Jmeno = jmeno;
+
         }
     }
 }
