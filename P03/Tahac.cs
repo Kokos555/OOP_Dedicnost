@@ -10,6 +10,7 @@ namespace P03
     internal class Tahac : NakladniAuto
     {
 
+
         public Tahac(string spz, int nosnost, int nosnostVlečky) : base(spz, nosnost)
         {
             this.nosnost += nosnostVlečky;

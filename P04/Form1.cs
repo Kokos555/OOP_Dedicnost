@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace P04
 {
@@ -21,8 +22,6 @@ namespace P04
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string jmeno = textBox1.Text;
-            idk = new Atlet(jmeno);
             MessageBox.Show(idk.ToString());
         }
 
@@ -38,6 +37,21 @@ namespace P04
             int spanek = Convert.ToInt32(textBox3.Text);
             idk.Spanek(spanek);
             idk.ZjistiUnavu();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            idk = new Atlet("Tonda");
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            idk = new Atlet("Tonda");
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            idk = new Veteran("Karel",Convert.ToInt32(textBox4.Text));
         }
     }
 }

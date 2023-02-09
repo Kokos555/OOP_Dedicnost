@@ -35,7 +35,7 @@ namespace P04
             unava = 0;
         }
 
-        public void Behej(int pocet_km)
+        public virtual void Behej(int pocet_km)
         {
 
             for (int i = 0; i < pocet_km; i++)
@@ -43,13 +43,13 @@ namespace P04
                 unava += 10;
                 if (unava == 200)
                 {
-                    MessageBox.Show(string.Format($"Běžec {Jmeno} odmítl běhat, protože je moc unavený, potřebuje se prospat. Běžec uběhl {pocet_km} kilometrů, je to více, než kdy uběhneš ty."));
+                    MessageBox.Show(string.Format($"Běžec {Jmeno} odmítl běhat, protože je moc unavený, potřebuje se prospat. Běžec uběhl {pocet_km} kilometrů."));
                     break;
                 }
             }
         }
 
-        public void Spanek(int hodiny)
+        public virtual void Spanek(int hodiny)
         {
             if (hodiny == 1 && unava >= 100)
             {
