@@ -8,10 +8,10 @@ namespace P02
 {
     internal class Retez
     {
-        private string veta;
-        private int cislo;
+        protected string veta;
+        protected int cislo;
 
-        public string Veta
+        public virtual string Veta
         {
             get
             {
@@ -48,13 +48,12 @@ namespace P02
             return Veta;
         }
 
-        public string Zkrat()
+        public virtual void Zkrat()
         {
             string[] slova = Veta.Split(' ');
             slova = slova.Take(cislo).ToArray();
 
             Veta = string.Join(" ", slova);
-            return Veta;
         }
     }
 }
