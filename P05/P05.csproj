@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0F9F55F8-39A5-4D8B-89D9-7E18E23222F3}</ProjectGuid>
+    <ProjectGuid>{444B5C15-D07E-4F4F-9F2A-C1A5598E8C22}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>P02</RootNamespace>
-    <AssemblyName>P02</AssemblyName>
+    <RootNamespace>P05</RootNamespace>
+    <AssemblyName>P05</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,8 +54,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Retez.cs" />
-    <Compile Include="RetezecDalsi.cs" />
+    <Compile Include="Vedouci.cs" />
+    <Compile Include="Zamestnanec.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
