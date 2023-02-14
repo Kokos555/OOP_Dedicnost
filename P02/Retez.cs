@@ -31,29 +31,30 @@ namespace P02
             }
         }
 
-        public Retez(string veta)
-        {
-            Veta = veta;
-            cislo = 1;
-        }
-
         public Retez(string veta, int cislo)
         {
             Veta = veta;
             this.cislo = cislo;
         }
 
-        public override string ToString()
+        public string Vypis()
         {
             return Veta;
         }
 
-        public virtual void Zkrat()
+        public virtual int PocetSlov()
+        {
+            string[] veta_array = veta.Split(' ');
+            return veta_array.Length;
+        }
+
+        public virtual string Zkrat()
         {
             string[] slova = Veta.Split(' ');
             slova = slova.Take(cislo).ToArray();
 
             Veta = string.Join(" ", slova);
+            return Veta;
         }
     }
 }
